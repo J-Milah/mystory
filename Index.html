@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Universe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #6D4642;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 20px;
+      min-height: 100vh;
+    }
+
+    .phone {
+      background: #fff;
+      width: 360px;
+      height: 800px;
+      border-radius: 30px;
+      padding: 20px;
+      box-shadow: 0 0 0 6px #6D4642;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .dots {
+      position: absolute;
+      left: 0;
+      display: flex;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: #C48E8B;
+      border-radius: 50%;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .story-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .card {
+      background: #F4DCDC;
+      border-radius: 12px;
+      display: flex;
+      padding: 10px;
+      gap: 10px;
+      align-items: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 81px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .card-title {
+      font-family: 'Baskervville';
+      font-weight: 600;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .card-author {
+      font-family: 'Time New Roman';
+      font-size: 12px;
+      color: #777;
+    }
+
+    .tags {
+      font-size: 11px;
+      color: #555;
+      line-height: 1.2;
+    }
+
+    .read-btn {
+      align-self: flex-end;
+      background: #6D4642;
+      color: #fff;
+      border: none;
+      padding: 4px 12px;
+      border-radius: 16px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .read-btn:hover {
+      background: #5a3c38;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="header">
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="title">Library Universe</div>
+    </div>
+
+    <div class="story-list">
+      <div class="card">
+        <img src="cover-async.jpg" alt="ASYNC">
+        <div class="card-content">
+          <div class="card-title">ASYNC</div>
+          <div class="card-author">Remyriel</div>
+          <div class="tags">
+            💻 Techno-thriller<br>
+            💖 Campus life<br>
+            👾 Sci-fi
+          </div>
+          <a href="login.html" class="read-btn">Read →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cover-override.jpg" alt="Override">
+        <div class="card-content">
+          <div class="card-title">Override</div>
+          <div class="card-author">Remyriel</div>
+          <div class="tags">
+            ⚔️ Action<br>
+            👾 Sci-fi<br>
+            🧺 Slice of life
+          </div>
+          <a href="dasbaord-override.html" class="read-btn">Read →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cover-chaos.jpg" alt="Symphony of Beautiful Chaos">
+        <div class="card-content">
+          <div class="card-title">Symphony of Beautiful Chaos</div>
+          <div class="card-author">Remyriel</div>
+          <div class="tags">
+            🧺 Slice of life<br>
+            📚 Campus life<br>
+          </div>
+          <a href="dasbaord-chaos.html" class="read-btn">Read →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9D0CE;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+  min-height: 100vh;
+}
+
+.phone {
+  background: #fff;
+  width: 360px;
+  height: 800px;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.dot {
+  width: 24px;
+  height: 24px;
+  background-color: #F297A0;
+  border-radius: 50%;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.cover {
+  width: 294px;
+  height: 253px;
+  border-radius: 24px;
+  margin: 20px auto;
+  object-fit: cover;
+}
+
+.stars {
+  color: #B6BB79;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.3;
+  position: relative;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.bookmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.author, .subtitle {
+  font-family: 'Times New Roman', serif;
+  color: #555;
+}
+
+.author {
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.desc, .content {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  color: #222;
+}
+
+.desc {
+  font-size: 1rem;
+}
+
+.content {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 240px;
+  height: 100%;
+  background-color: #fff;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+  z-index: 10;
+  padding: 20px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #111;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.sidebar a.active {
+  background-color: #9BE7FA;
+  color: #000;
+}
+
+.sidebar .top-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.home-icon {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.chat-box {
+  background-color: whitesmoke;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.chat-box-mire {
+  border-left: 4px solid #A8BF8A;
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.chat-box-lys {
+  border-left: 4px solid #89B7C2;
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.chat-box-fey {
+  border-left: 4px solid #FFD14C;
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.chat-box-ryn {
+  border-left: 4px solid #B4A7EB;
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.chat-box-nor {
+  border-left: 4px solid #447AC4;
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.chat-box-inel {
+  border-left: 4px solid #F49AA2;
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.chat-box-vaida {
+  border-left: 4px solid #734128;
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  padding: 8px 14px;
+  background-color: #FFD14C;
+  color: black;
+  border-radius: 8px;
+  /*font-weight: bold;*/
+}
+
+pre[class*="language-"] {
+  border-radius: 12px;
+  margin: 16px 0;
+  font-size: 0.9rem;
+}
+
+br {
+  display: block;
+  margin-top: 0.1em; /* 1.5 line height - 1em = 0.5em tambahan */
+  height: 0;
+  overflow: hidden;
+}
+
+.ost-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  flex-wrap: wrap; /* agar responsive di layar kecil */
+  text-align: center;
+}
+
+.ost-player .music-icon {
+  color: #6c63ff;
+  font-size: 16px;
+}
+
+.ost-player .ost-title {
+  white-space: nowrap;
+  font-weight: 500;
+}

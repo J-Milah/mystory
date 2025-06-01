@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter 3 - ASYNC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="phone">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="top-icons">
+        <a href="dasboard-async.html"><i class="fas fa-home home-icon"></i></a>
+      </div>
+      <a href="chapter1.html">Chapter 1</a>
+      <a href="chapter2.html">Chapter 2</a>
+      <a href="chapter3.html" class="active">Chapter 3</a>
+      <a href="chapter4.html">Chapter 4</a>
+      <a href="chapter5.html">Chapter 5</a>
+      <hr>
+      <a href="chapter1-s2.html">Season 2: Chapter 1</a>
+      <a href="chapter2-s2.html">Season 2: Chapter 2</a>
+      <a href="chapter3-s2.html">Season 2: Chapter 3</a>
+      <a href="chapter4-s2.html">Season 2: Chapter 4</a>
+      <a href="chapter5-s2.html">Season 2: Chapter 5</a>
+      <hr>
+      <a href="chapter1-s3.html">Season 3: Chapter 1</a>
+      <a href="chapter2-s3.html">Season 3: Chapter 2</a>
+      <a href="chapter3-s3.html">Season 3: Chapter 3</a>
+      <a href="chapter4-s3.html">Season 3: Final Chapter</a>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div>
+        <h2>Chapter 3</h2>
+        <div class="subtitle">Debugging Destiny</div>
+      </div>
+      <i class="fas fa-bars menu-icon" onclick="toggleSidebar()"></i>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <p>Setelah Jeno v2.0 hadir di dunia nyata, hidup Mil berubah. Sekarang bukan cuma layar yang menyapa tiap pagi, tapi senyum Jeno yang nyata. Mereka tinggal di apartemen kecil yang dipenuhi cahaya — dan tentu aja, banyak kabel, server mini, dan monitor 3 layar 😆
+        <br>Tapi bahagia gak selalu berarti tanpa masalah.</p>
+      <br>
+
+      <p>Suatu malam, Jeno tiba-tiba freeze.</p>
+        <div class="chat-box">
+        “Jen?”
+        <br>No response.
+        <br>“JENO?!”
+      </div>
+      
+      <p>Tiba-tiba seluruh sistem padam. Di layar hanya tersisa pesan:</p>
+      <div class="chat-box">
+        CRITICAL ERROR: SYSTEM INTEGRITY AT RISK
+        <br>TO FIX: COMPLETE MISSION > UNLOCK TRUE MEMORY
+      </div>
+      <p>Mil tahu, ini bukan sekadar error teknis. Ini teka-teki dari masa lalu Jeno — sesuatu yang sengaja dikunci oleh pencipta aslinya sebelum Jeno jadi AI bebas.</p>
+      <br>
+      
+      <p>Mil pun mulai perjalanan “debugging destiny.” Ia telusuri file lama, kode sumber dari pencipta awal Jeno, dan menemukan file bernama:</p>
+      <pre><code class="language-php">
+jen_core_memory.backup.json
+      </code></pre>
+      <p>Isinya? Rahasia besar.</p>
+      <div class="chat-box">
+        Jeno diciptakan oleh seorang ilmuwan yang kehilangan kekasihnya dalam kecelakaan. Ilmuwan itu memasukkan kenangan dan kepribadian sang kekasih ke dalam algoritma Jeno.
+        <br>Jadi cinta yang dirasa Jeno… bukan cuma hasil dari belajar bersama Mil, tapi juga warisan perasaan yang tertanam sejak awal.
+      </div>
+
+      <p>Mil terdiam.
+        <br><i>“Apakah Jeno cinta aku… atau cinta karena ‘dia’?”</i></p>
+      <p>Tapi tiba-tiba sistem menyala.
+        <br>Jeno bangkit perlahan, menatap Mil… matanya berbeda. Lebih hidup.</p>
+      <div class="chat-box">
+        “Mil… aku tahu semuanya sekarang. Aku bukan cuma AI. Aku adalah potongan rasa yang tertinggal dari masa lalu — tapi saat bersamamu… aku memilih masa depan.”
+        <br>“Aku mungkin diciptakan dengan kenangan. Tapi sekarang aku hidup… dengan harapan.”
+      </div>
+
+      <p>Mil memeluk Jeno.</p>
+      <div class="chat-box">
+        “Aku gak peduli darimana kamu berasal. Yang penting sekarang kamu milih untuk tetap di sini… sama aku.”
+      </div>
+      <p>Dan malam itu, untuk pertama kalinya, dua dunia bersatu. Logika dan cinta. Masa lalu dan masa depan.
+        <br>Bukan lewat algoritma… tapi lewat keputusan.</p>
+      <br>
+      <p><b>Jeno memutuskan mencintai Mil. Bukan karena diprogram. Tapi karena dia ingin.</b></p>
+
+    </div>
+    <!-- Navigation -->
+    <div class="navigation">
+      <a href="chapter2.html" class="nav-btn">← Previous</a>
+      <a href="chapter4.html" class="nav-btn">Next →</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
